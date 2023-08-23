@@ -3,8 +3,8 @@ layout: home
 permalink: index.html
 
 # Please update this with your repository name and title
-repository-name: eYY-XXX-project-template
-title:
+repository-name: e19-co227-Engineering-Education-Web
+title:Engineering Education Web
 ---
 
 [comment]: # "This is the standard layout for the project, but you can clean this and use your own template"
@@ -20,9 +20,10 @@ This is a sample image, to show how to add images to your page. To learn more op
  -->
 
 ## Team
--  eNumber, Name, [email](mailto:name@email.com)
--  eNumber, Name, [email](mailto:name@email.com)
--  eNumber, Name, [email](mailto:name@email.com)
+-  e19060, Danujan, [email](e19060eng.pdn.ac.lk)
+-  e19100, Sahira, [email](e19100eng.pdn.ac.lk)
+-  e19131, Kasuni, [email](e19131eng.pdn.ac.lk)
+-  e19266, Nithusikan, [email](e19266eng.pdn.ac.lk)
 
 ## Table of Contents
 1. [Introduction](#introduction)
