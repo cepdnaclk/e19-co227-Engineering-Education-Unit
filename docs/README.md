@@ -20,10 +20,11 @@ This is a sample image, to show how to add images to your page. To learn more op
  -->
 
 ## Team
--  e19060, Danujan, [email](e19060eng.pdn.ac.lk)
--  e19100, Sahira, [email](e19100eng.pdn.ac.lk)
--  e19131, Kasuni, [email](e19131eng.pdn.ac.lk)
--  e19266, Nithusikan, [email](e19266eng.pdn.ac.lk)
+-  E/19/060, Danujan, [e19060@eng.pdn.ac.lk](mailto:e19060@eng.pdn.ac.lk)
+-  E/19/100, Sahira, [e19060@eng.pdn.ac.lk](mailto:e19100@eng.pdn.ac.lk)
+-  E/19/131, Kasuni, [e19060@eng.pdn.ac.lk](mailto:e19131@eng.pdn.ac.lk)
+-  E/19/266, Nithusikan, [e19060@eng.pdn.ac.lk](mailto:e19266@eng.pdn.ac.lk)
+
 
 ## Table of Contents
 1. [Introduction](#introduction)
@@ -34,9 +35,33 @@ This is a sample image, to show how to add images to your page. To learn more op
 
 ## Introduction
 
- description of the real world problem and solution, impact
+ EEU is a comprehensive web application,offers a dynamic platform to facilitate learning,connect educators and students, and provide resources on a global scale.It coordinates activities in the areas of staff development, curriculum development, provision of audio - visual facilities for educational purposes and freshman orientation.
+
+
 
 ## Other Sub Topics
+
+Problem Domain
+User Friendly One
+
+Designed to improve the UI which is better than the previous one
+Booking system
+
+Create an efficient booking system with First Come First Serve for the seminar rooms and the lecture halls
+Admin
+
+If the changes needed in the website, the admin can change it easily without modifying the code
+Security
+
+Designed to improve the security of the website since previous one got hacked
+Functions of application
+Lecturers & students can book a seminar room or a lecture hall as wanted
+Designed to get the ideas about the general courses and check the details of the past and the present staff.
+Designed to get the details of the TEAL 2.0 seminar series and videos of the some subjects and some events. Update the pages when there is a need Can book a lecture hall or a seminar room if its necessary even if it is already booked Can upload the videos of some subjects and the events held in the university
+Users
+Administrator
+Lecturer
+Students
 
 .....
 
