@@ -39,7 +39,7 @@ This is a sample image, to show how to add images to your page. To learn more op
 
 
 
-## Other Sub Topics
+
 
 ## Problem Domain
 **User Friendly One**
@@ -52,11 +52,11 @@ This is a sample image, to show how to add images to your page. To learn more op
 
 **Admin**
 
-If the changes needed in the website, the admin can change it easily without modifying the code
+- If the changes needed in the website, the admin can change it easily without modifying the code
 
 **Security**
 
-Designed to improve the security of the website since previous one got hacked
+- Designed to improve the security of the website since previous one got hacked
 
 ## Functions of application
 - Lecturers & students can book a seminar room or a lecture hall as wanted
@@ -68,12 +68,12 @@ Designed to improve the security of the website since previous one got hacked
 - **Lecturers**
 - **Students**
 
-.....
+
 
 ## Links
 
 - [Project Repository](https://github.com/cepdnaclk/e19-co227-Engineering-Education-Unit)
-- [Project Page](https://cepdnaclk.github.io/{{ page.repository-name}}){:target="_blank"}
+- [Project Page](https://cepdnaclk.github.io/e19-co227-Engineering-Education-Unit/)
 - [Department of Computer Engineering](http://www.ce.pdn.ac.lk/)
 - [University of Peradeniya](https://eng.pdn.ac.lk/)
 
