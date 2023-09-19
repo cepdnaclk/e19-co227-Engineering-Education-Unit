@@ -42,7 +42,7 @@ This is a sample image, to show how to add images to your page. To learn more op
 
 - Have to improve the UI which is better than the previous one
 - Home page of the previous page is given below
-![Sample Image](./images/ss_of_the_web_side.jpg)
+![Sample Image](./images/ss%20of%20the%20web%20side.png)
 
 
 
@@ -60,18 +60,17 @@ This is a sample image, to show how to add images to your page. To learn more op
 
 ## Solution Architecture
 
-### INCRESE THE SECURITY
-- Secure hosting provider,
+### Increase the security
+   - Secure hosting provider,
 - Strong authentication system
 - Validation of  all user inputs 
 - Regular backups 
 
-### USER FRIENDLY UI
+### User Friendly UI
 - Simple, accessible and responsive design to prioritize the most important information
 - making them easy to find
 - regularly solicit feedback from users.
-
-### EFFICIENT BOOKING SYSTEM
+### Efficient Booking System
 - First come first serve
 - User friendly one
 - Make the process an easier one
@@ -79,13 +78,13 @@ This is a sample image, to show how to add images to your page. To learn more op
 
 ## Functions of application
 
-### User ( Lecturers / Students)
+#### **User ( Lecturers / Students)**
 - Can book a seminar room or a lecture hall as wanted
 - Designed to get the ideas about the general courses offered to the undergraduates in various times
 - check the details of the past and the present staff of EEU.
 - Designed to get the details of the TEAL 2.0 seminar series and videos of the some subjects and some events.
 
-### Admin
+#### **Admin**
 - Update the pages when there is a need 
 - Can book a lecture hall or a seminar room if its necessary even if it is already booked 
 - Can upload the videos of some subjects and the events held in the university
