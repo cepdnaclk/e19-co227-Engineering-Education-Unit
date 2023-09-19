@@ -19,11 +19,7 @@ This is a sample image, to show how to add images to your page. To learn more op
 ![Sample Image](./images/Logo.jpg)
  
 
-## Team
--  E/19/060, Danujan, [email](mailto:e19060@eng.pdn.ac.lk)
--  E/19/100, Sahira, [email](mailto:e19100@eng.pdn.ac.lk)
--  E/19/131, Kasuni, [email](mailto:e19131@eng.pdn.ac.lk)
--  E/19/266, Nithusikan, [email](mailto:e19266@eng.pdn.ac.lk)
+
 
 
 ## Table of Contents
@@ -31,24 +27,29 @@ This is a sample image, to show how to add images to your page. To learn more op
 2. [Problem Domain](#problem-domain)
 3. [Functions of application](#functions-of-application)
 4. [Users](#users)
-3. [Links](#links)
+5. [Team](#team)
+6. [Links](#links)
 
 ---
 
 ## Introduction
 
- EEU is a comprehensive web application,offers a dynamic platform to facilitate learning,connect educators and students, and provide resources on a global scale.It coordinates activities in the areas of staff development, curriculum development, provision of audio - visual facilities for educational purposes and freshman orientation.
+ EEU is a comprehensive web application, offers a dynamic platform to facilitate learning, connect educators and students, and provide resources on a global scale. It coordinates activities in the areas of staff development, curriculum development, provision of audio - visual facilities for educational purposes and freshman orientation.
 
 
 
 ## Problem Domain
 **User Friendly One**
 
-- Designed to improve the UI which is better than the previous one
+- Have to improve the UI which is better than the previous one
+- Home page of the previous page is given below
+![Sample Image](./images/ss_of_the_web_side.jpg)
+
+
 
 **Booking system**
 
-- Create an efficient booking system with First Come First Serve for the seminar rooms and the lecture halls
+- Create an efficient booking system with First Come First Serve method for the seminar rooms and the lecture halls
 
 **Admin**
 
@@ -67,6 +68,12 @@ This is a sample image, to show how to add images to your page. To learn more op
 - **Administrator**
 - **Lecturers**
 - **Students**
+
+## Team
+-  E/19/060, Danujan, [email](mailto:e19060@eng.pdn.ac.lk)
+-  E/19/100, Sahira, [email](mailto:e19100@eng.pdn.ac.lk)
+-  E/19/131, Kasuni, [email](mailto:e19131@eng.pdn.ac.lk)
+-  E/19/266, Nithusikan, [email](mailto:e19266@eng.pdn.ac.lk)
 
 
 
