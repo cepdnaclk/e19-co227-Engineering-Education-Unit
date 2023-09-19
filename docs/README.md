@@ -26,9 +26,8 @@ This is a sample image, to show how to add images to your page. To learn more op
 1. [Introduction](#introduction)
 2. [Problem Domain](#problem-domain)
 3. [Functions of application](#functions-of-application)
-4. [Users](#users)
-5. [Team](#team)
-6. [Links](#links)
+4. [Team](#team)
+5. [Links](#links)
 
 ---
 
@@ -53,21 +52,47 @@ This is a sample image, to show how to add images to your page. To learn more op
 
 **Admin**
 
-- If the changes needed in the website, the admin can change it easily without modifying the code
+- If the changes needed in the website,Admin have to hard code to make the changes. But now the admin can change it easily without modifying the code.
 
 **Security**
 
 - Designed to improve the security of the website since previous one got hacked
 
-## Functions of application
-- Lecturers & students can book a seminar room or a lecture hall as wanted
-- Designed to get the ideas about the general courses and check the details of the past and the present staff.
-- Designed to get the details of the TEAL 2.0 seminar series and videos of the some subjects and some events. Update the pages when there is a need Can book a lecture hall or a seminar room if its necessary even if it is already booked Can upload the videos of some subjects and the events held in the university
+## Solution Architecture
 
-## Users
-- **Administrator**
-- **Lecturers**
-- **Students**
+### INCRESE THE SECURITY
+- Secure hosting provider,
+- Strong authentication system
+- Validation of  all user inputs 
+- Regular backups 
+
+### USER FRIENDLY UI
+- Simple, accessible and responsive design to prioritize the most important information
+- making them easy to find
+- regularly solicit feedback from users.
+
+### EFFICIENT BOOKING SYSTEM
+- First come first serve
+- User friendly one
+- Make the process an easier one
+
+
+## Functions of application
+
+### User ( Lecturers / Students)
+- Can book a seminar room or a lecture hall as wanted
+- Designed to get the ideas about the general courses offered to the undergraduates in various times
+- check the details of the past and the present staff of EEU.
+- Designed to get the details of the TEAL 2.0 seminar series and videos of the some subjects and some events.
+
+### Admin
+- Update the pages when there is a need 
+- Can book a lecture hall or a seminar room if its necessary even if it is already booked 
+- Can upload the videos of some subjects and the events held in the university
+
+## Data Flow
+![Sample Image](./images/Data_flow.png)
+
 
 ## Team
 -  E/19/060, Danujan, [email](mailto:e19060@eng.pdn.ac.lk)
