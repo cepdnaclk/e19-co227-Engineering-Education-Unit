@@ -14,10 +14,10 @@ title: Engineering Education Unit
 ---
 
 <!-- 
-This is a sample image, to show how to add images to your page. To learn more options, please refer [this](https://projects.ce.pdn.ac.lk/docs/faq/how-to-add-an-image/)
+This is a sample image, to show how to add images to your page. To learn more options, please refer [this](https://projects.ce.pdn.ac.lk/docs/faq/how-to-add-an-image/)-->
 
-![Logo](./images/Logo.png)
- -->
+![Sample Image](./images/Logo.jpg)
+ 
 
 ## Team
 -  E/19/060, Danujan, [email](mailto:e19060@eng.pdn.ac.lk)
