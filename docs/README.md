@@ -64,17 +64,17 @@ This is a sample image, to show how to add images to your page. To learn more op
 
 ## Solution Architecture
 
-### 1 . Increase the security
+#### 1 . Increase the security
 - Secure hosting provider
 - Strong authentication system
 - Validation of  all user inputs 
 - Regular backups 
 
-### 2. User Friendly UI
+#### 2. User Friendly UI
 - Simple, accessible and responsive design to prioritize the most important information
 - Making them easy to find
 - Regularly solicit feedback from users
-### 3. Efficient Booking System
+#### 3. Efficient Booking System
 - First come first serve method
 - User friendly one
 - Make the process an easier one
