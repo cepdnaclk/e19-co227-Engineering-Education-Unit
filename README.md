@@ -36,14 +36,7 @@ Can upload the videos of some subjects and the events held in the university
 * E/19/131 Kasuni Hansachapa
 * E/19/266 Nithusikan T.-->
 
----
-layout: home
-permalink: index.html
 
-# Please update this with your repository name and title
-repository-name: e19-co227-Engineering-Education-Unit
-title: Engineering Education Unit
----
 
 [comment]: # "This is the standard layout for the project, but you can clean this and use your own template"
 
@@ -54,7 +47,7 @@ title: Engineering Education Unit
 <!-- 
 This is a sample image, to show how to add images to your page. To learn more options, please refer [this](https://projects.ce.pdn.ac.lk/docs/faq/how-to-add-an-image/)-->
 
-![Front side of Faculty of Engineering University of Peradeniya](./images/uop.jpg)
+![Front side of Faculty of Engineering University of Peradeniya](./docs/images/uop.jpg)
  
 
 
@@ -84,7 +77,7 @@ This is a sample image, to show how to add images to your page. To learn more op
 - Have to improve the UI which is better than the previous one
 - Home page of the previous page is given below
 
-![Sample Image](./images/ss%20of%20the%20web%20side.png)
+![Sample Image](./docs/images/ss%20of%20the%20web%20side.png)
 
 
 
@@ -133,10 +126,10 @@ This is a sample image, to show how to add images to your page. To learn more op
 - Can upload the videos of some subjects and the events held in the university
 
 ## Data Flow
-![Data Flow](./images/Data_flow.png)
+![Data Flow](./docs/images/Data_flow.png)
 
 ## Control Flow
-![Control Flow](./images/ControlFlow.drawio%20(3).png)
+![Control Flow](./docs//images/ControlFlow.drawio%20(3).png)
 
 ## Technology Stack
 - #### Front end  - React, Bootstrap
