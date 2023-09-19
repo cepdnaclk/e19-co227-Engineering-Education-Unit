@@ -28,8 +28,8 @@ This is a sample image, to show how to add images to your page. To learn more op
 
 ## Table of Contents
 1. [Introduction](#introduction)
-2. [Problem Domain](#problem_domain)
-3. [Functions of application](#functions_of_application)
+2. [Problem Domain](#problem-domain)
+3. [Functions of application](#functions-of-application)
 4. [Users](#users)
 3. [Links](#links)
 
@@ -38,8 +38,6 @@ This is a sample image, to show how to add images to your page. To learn more op
 ## Introduction
 
  EEU is a comprehensive web application,offers a dynamic platform to facilitate learning,connect educators and students, and provide resources on a global scale.It coordinates activities in the areas of staff development, curriculum development, provision of audio - visual facilities for educational purposes and freshman orientation.
-
-
 
 
 
