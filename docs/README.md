@@ -28,7 +28,9 @@ This is a sample image, to show how to add images to your page. To learn more op
 
 ## Table of Contents
 1. [Introduction](#introduction)
-2. [Other Sub Topics](#other-sub-topics)
+2. [Problem Domain](#problem_domain)
+3. [Functions of application](#functions_of_application)
+4. [Users](#users)
 3. [Links](#links)
 
 ---
