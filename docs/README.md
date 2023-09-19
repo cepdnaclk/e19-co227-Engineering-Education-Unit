@@ -16,81 +16,103 @@ title: Engineering Education Unit
 <!-- 
 This is a sample image, to show how to add images to your page. To learn more options, please refer [this](https://projects.ce.pdn.ac.lk/docs/faq/how-to-add-an-image/)-->
 
-![Sample Image](./images/Logo.jpg)
+![Front side of Faculty of Engineering University of Peradeniya](./images/uop.jpg)
  
 
 
 
 
-## Table of Contents
+# Table of Contents
 1. [Introduction](#introduction)
 2. [Problem Domain](#problem-domain)
-3. [Functions of application](#functions-of-application)
-4. [Team](#team)
-5. [Links](#links)
+3. [Solution Architecture](#solution-architecture)
+4. [Functions of application](#functions-of-application)
+5. [Data Flow](#data-flow)
+6. [Control Flow](#control-flow)
+7. [Technology Stack](#technology-stack)
+5. [Team](#team)
+6. [Links](#links)
 
 ---
 
 ## Introduction
 
- EEU is a comprehensive web application, offers a dynamic platform to facilitate learning, connect educators and students, and provide resources on a global scale. It coordinates activities in the areas of staff development, curriculum development, provision of audio - visual facilities for educational purposes and freshman orientation.
+ EEU is a comprehensive web application, offers a dynamic platform to facilitate learning, connect educators and students, and provide resources on a global scale. It co-ordinates activities in the areas of staff development, curriculum development, provision of audio - visual facilities for educational purposes and freshman orientation.
 
 
 
 ## Problem Domain
-**User Friendly One**
-
+**1. Previous website is not a User Friendly One**
 - Have to improve the UI which is better than the previous one
 - Home page of the previous page is given below
+
 ![Sample Image](./images/ss%20of%20the%20web%20side.png)
 
 
 
-**Booking system**
+**2. Booking system not functioning**
 
-- Create an efficient booking system with First Come First Serve method for the seminar rooms and the lecture halls
+- We have to create an efficient booking system with "First Come First Serve" method for the seminar rooms and the lecture halls.
 
-**Admin**
+**3. Not a dynamic one**
 
-- If the changes needed in the website,Admin have to hard code to make the changes. But now the admin can change it easily without modifying the code.
+- If the changes needed in the previous website,admin have to hard code to make the changes. But now the admin can change it easily in the page itself, without modifying the code.
 
-**Security**
+**4. Low in Security**
 
-- Designed to improve the security of the website since previous one got hacked
+- Have to improve the security of the website since previous one got hacked
 
 ## Solution Architecture
 
-### Increase the security
-   - Secure hosting provider,
+### 1 . Increase the security
+- Secure hosting provider
 - Strong authentication system
 - Validation of  all user inputs 
 - Regular backups 
 
-### User Friendly UI
+### 2. User Friendly UI
 - Simple, accessible and responsive design to prioritize the most important information
-- making them easy to find
-- regularly solicit feedback from users.
-### Efficient Booking System
-- First come first serve
+- Making them easy to find
+- Regularly solicit feedback from users
+### 3. Efficient Booking System
+- First come first serve method
 - User friendly one
 - Make the process an easier one
 
 
 ## Functions of application
 
-#### **User ( Lecturers / Students)**
+#### **i. User ( Lecturers / Students)**
 - Can book a seminar room or a lecture hall as wanted
 - Designed to get the ideas about the general courses offered to the undergraduates in various times
 - check the details of the past and the present staff of EEU.
 - Designed to get the details of the TEAL 2.0 seminar series and videos of the some subjects and some events.
 
-#### **Admin**
+#### **ii. Admin**
 - Update the pages when there is a need 
 - Can book a lecture hall or a seminar room if its necessary even if it is already booked 
 - Can upload the videos of some subjects and the events held in the university
 
 ## Data Flow
-![Sample Image](./images/Data_flow.png)
+![Data Flow](./images/Data_flow.png)
+
+## Control Flow
+![Control Flow](./images/ControlFlow.drawio%20(3).png)
+
+## Technology Stack
+- ### Front end  - React, Bootstrap
+- ### Back end - Java (Spring Framework)
+- ### Security - Spring Security, JWT
+- ### Testing - Postman
+- ### Storage - MySQL
+![Tech Stack](./images/icons-hero.png) 
+![React](./images/React.png)
+![Spring](./images/spring.jpg)
+![Postman](./images/postman.png)
+![JWT](./images/images.png)
+
+
+
 
 
 ## Team
