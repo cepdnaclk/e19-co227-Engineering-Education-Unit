@@ -2,7 +2,7 @@ import React from 'react';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
-const App=()=>{
+const PresentStaff=()=>{
   return(
     <>
     
@@ -58,4 +58,4 @@ const App=()=>{
   )
 }
 
-export default App;
+export default PresentStaff;
