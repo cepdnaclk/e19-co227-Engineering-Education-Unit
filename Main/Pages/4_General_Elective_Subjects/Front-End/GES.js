@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react'
 import './GES.css'
 import axios from "axios"
 
+
 const GES = () => {
 
   const [courses, setCourses] = useState([])
@@ -11,9 +12,23 @@ const GES = () => {
   },[]);
 
   const loadCourses =async () =>{
-    const result=await axios.get("http://localhost:8080/getcourses");
+    const result=await axios.get("http://localhost:8080/getcourses2");
     setCourses(result.data);
   }
+
+  const[courses2,setCourses2] = useState([])
+
+  useEffect(() =>{
+    loadCourses2();
+  },[]);
+
+  const loadCourses2 =async () =>{
+    const result=await axios.get("http://localhost:8080/getcourses");
+    setCourses2(result.data);
+  }
+
+
+
   return (
     <div className = "Section1">
       <h2 className = "heading1">General Elective Subjects</h2>
@@ -35,10 +50,9 @@ const GES = () => {
 
       <div className = "Section2" >
         <table className = "Table">
-          
           <thead>
             <tr>
-              <th colSpan="11">General Elective Subject</th>
+              <th colSpan="11">Management and Economics</th>
             </tr>
             <tr>
               <th>#</th>
@@ -72,80 +86,77 @@ const GES = () => {
                 </tr>
               ))
             }
-            <tr>
-
-            </tr>
-          </tbody>
-          
+          </tbody>  
         </table>
         <br></br>
-
-        <p>
-        * To be offered from October 2021
         <br></br>
+        <table className = "Table">
+          <thead>
+            <tr>
+              <th colSpan="11">Arts and Humanities & Political and Social Sciences</th>
+            </tr>
+            <tr>
+              <th>#</th>
+              <th>Code</th>
+              <th>Subject</th>
+              <th>Credits</th>
+              <th>Category</th>
+              <th>5/7 Semsester</th>
+              <th>6/8 Semster</th>
+              <th>CO Short Semester</th>
+              <th>Coordinating Dept</th>
+              <th>Coordinator</th>
+              <th>Lecturer</th>
+            </tr>
+          </thead>
+          <tbody>
+            {
+              courses2.map((Course2,index) =>(
+                <tr>
+                  <td key={index}>{index+1}</td>
+                  <td>{Course2.code}</td>
+                  <td>{Course2.subject}</td>
+                  <td>{Course2.credits}</td>
+                  <td>{Course2.category}</td>
+                  <td>{Course2.semester_5_7}</td>
+                  <td>{Course2.semester_6_8}</td>
+                  <td>{Course2.cO_Short_Semester}</td>
+                  <td>{Course2.coordinating_Dept}</td>
+                  <td>{Course2.coordinator}</td>
+                  <td>{Course2.lecturer}</td>
+                </tr>
+              ))
+            }
+          </tbody>  
+        </table>
         <br></br>
-        Note: The following courses are offered in Semester 5 (Starting from June 7, 2021)
-        <br></br>
-        EF511, EF516, EF519, EF521, EF528
-        <br></br>
-        The following courses are offered in Semester 6 (Starting from June 7, 2021)
-        <br></br>
-        EF501, EF509, EF511, EF520, EF521, EF528
-        <br></br>
-        </p>
-
+        <p className ="alert"> ! ! ! EF509,EF521,EF524 will not be offered from 2024 onwards. </p>
+        
+        
         <h3>Special Requirements</h3>
-        <br></br>
-        <br></br>
-
+        
+       
         <p>
-          CP551: Sustainable Development
-          <br></br>
-          EF528: Introduction to Digital Art
-          <br></br>
-          An only a limited number of student will be registered on a first-come-first-served basis
+          <ul>
+            <li><b>EF528: Introduction to Digital Art</b> - An only a limited number of student will be registered on a first-come-first-served basis</li>
+          </ul>  
         </p>
       </div>
       <div className = "Section3">
-        <h3>The List of Courses offered under General Electives</h3>
+        <h3>The List of Courses offered under General Electives in the Past</h3>
+        {/*<Courses_not_offered/>*/}
         <ul>
-          <li>CO422: Professional Practices</li>
-          <li>CO423: Software Project Management</li>
-          <li>CO424: Information Systems Management</li>
-          <li>CP551: Sustainable Development</li>
-          <li>EF501: The Engineer in Society</li>
-          <li class="crossed-out">EF503: Critical Thinking and Writing Skills</li>
-          <li class="crossed-out">EF505: Management in Practice with Case Studies</li>
-          <li class="crossed-out">EF507: Government and Politics of Sri Lanka</li>
-          <li class="crossed-out">EF508: Political Issues in Sri Lanka</li>
-          <li>EF509: Engineer as an Entrepreneur</li>
-          <li class="crossed-out">EF510: Technology and Economic Development</li>
-          <li>EF511: Social Project</li>
-          <li class="crossed-out">EF512: Rural Economic Development and Technology</li>
-          <li>EF513: Introduction to Music</li>
-          <li class="crossed-out">EF514: Cinema and Television</li>
-          <li class="crossed-out">EF515: Theatre and Drama</li>
-          <li>EF516: Painting and Sculpture</li>
-          <li class="crossed-out">EF517: Project in Fine Arts</li>
-          <li>EF519: Written English for Communication</li>
-          <li>EF520: Effective Communication in English through Speech</li>
-          <li>EF521: Intellectual Property</li>
-          <li class="crossed-out">EF522: Sri Lankan Technology</li>
-          <li>EF524: Business Law</li>
-          <li class="crossed-out">EF526: Marketing & Financial Management</li>
-          <li>EF528: Introduction to Digital Art</li>
-          <li>EF530: Engineering Management</li>
-          <li>EF531: Mindfulness for Engineers</li>
-          <li>MA501: Accounting and Finance for Engineers</li>
-          <li>MA503: Business Communication</li>
-          <li>MA505: Business Law and Intellectual Property</li>
-          <li>MA507: Management of Technology</li>
-          <li>MA509: Marketing for Engineers</li>
-          <li>MA520: Economics for Engineers</li>
-          <li>MA522: Engineer as an Entrepreneur</li>
-          <li>MA524: Organizational Behaviour and Human Resources Management</li>
-          <li>MA526: Project Management</li>
-          <li>PR507: Industrial and Organizational Psychology</li>
+          <li>EF503: Critical Thinking and Writing Skills</li>
+          <li>EF505: Management in Practice with Case Studies</li>
+          <li>EF507: Government and Politics of Sri Lanka</li>
+          <li>EF508: Political Issues in Sri Lanka</li>
+          <li>EF510: Technology and Economic Development</li>
+          <li>EF512: Rural Economic Development and Technology</li>
+          <li>EF514: Cinema and Television</li>
+          <li>EF515: Theatre and Drama</li>
+          <li>EF517: Project in Fine Arts</li>
+          <li>EF522: Sri Lankan Technology</li>
+          <li>EF526: Marketing & Financial Management</li>
         </ul>
       </div>
     </div>
