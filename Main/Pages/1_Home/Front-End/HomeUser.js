@@ -27,7 +27,11 @@ class HomeUser extends Component{
         console.error("Error fetching paragraph:", error);
         });
     }
-
+    calculateTextareaRows = () => {
+        // Calculate the number of rows based on the content's line count
+        const lines = this.state.value.split('\n').length;
+        return Math.max(lines, lines); // Minimum of 18 rows
+    }
     
 
     renderDefaultView = () =>{
@@ -40,7 +44,7 @@ class HomeUser extends Component{
                         className = "info"
                         value={this.state.value}
                         // Adjust the number of columns as needed
-                        rows={25} // Adjust the number of rows as needed
+                        rows={this.calculateTextareaRows()} // Adjust the number of rows as needed
                         cols={100} // Adjust the number of columns as needed
                         readOnly
                         />
