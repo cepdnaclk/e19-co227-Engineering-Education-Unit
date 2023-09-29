@@ -50,6 +50,11 @@ class HomeAdmin extends Component{
           console.error("Error updating data:", error);
         });
     }
+    calculateTextareaRows = () => {
+        // Calculate the number of rows based on the content's line count
+        const lines = this.state.value.split('\n').length;
+        return Math.max(lines, lines); // Minimum of 18 rows
+    }
 
     changeEditMode = () => {
         this.setState({
@@ -76,8 +81,8 @@ class HomeAdmin extends Component{
                             <textarea
                                 defaultValue={this.state.value}
                                 ref="theTextInput"
-                                rows={25} // Adjust the number of rows as needed
-                                cols={125}
+                                rows={this.calculateTextareaRows()} // Adjust the number of rows as needed
+                                cols={190}
                             // Apply the defined style here
                             />
                             <button style={{ ...buttonStyle, backgroundColor: 'red' }} onClick={this.changeEditMode}>X</button>
@@ -108,7 +113,7 @@ class HomeAdmin extends Component{
                         className = "info"
                         value={this.state.value}
                         // Adjust the number of columns as needed
-                        rows={25} // Adjust the number of rows as needed
+                        rows={this.calculateTextareaRows()} // Adjust the number of rows as needed
                         cols={125} // Adjust the number of columns as needed
                         readOnly
                         />
