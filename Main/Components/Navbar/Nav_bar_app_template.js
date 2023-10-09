@@ -12,3 +12,7 @@ function App() {
 }
 
 export default App;
+
+/*Add this link to the index.html file 
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+*/
