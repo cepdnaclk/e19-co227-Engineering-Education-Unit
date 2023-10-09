@@ -8,6 +8,7 @@ import Alert_Course_Not_Offered_Admin from './Alert_Course_Not_Offered_Admin'
 const GESAdmin= () => {
 
   const [courses, setCourses] = useState([])
+  const[courses2,setCourses2] = useState([])
   const [selectedCourse1, setSelectedCourse1] = useState(null); // State to track the selected course for editing
   const [selectedCourse2, setSelectedCourse2] = useState(null); // State to track the selected course for editing
   const [formData1, setFormData1] = useState({
@@ -39,6 +40,7 @@ const GESAdmin= () => {
   const [showAddForm2, setShowAddForm2] = useState(false); // State for the second table's popup form
 
 
+  /* Handling get mapping */
   useEffect(() =>{
     loadCourses();
   },[]);
@@ -48,8 +50,6 @@ const GESAdmin= () => {
     setCourses(result.data);
   }
 
-  const[courses2,setCourses2] = useState([])
-
   useEffect(() =>{
     loadCourses2();
   },[]);
@@ -58,10 +58,12 @@ const GESAdmin= () => {
     const result=await axios.get("http://localhost:8080/getcourses");
     setCourses2(result.data);
   }
+  /* Get Mapping finished */
 
+  /* Add new courses to the table*/
   const handleAddCourse1 = async () => {
     // Send a POST request to add a new course to the first table
-    await axios.post('http://localhost:8080/user', formData1);
+    await axios.post('http://localhost:8080/user2', formData1);
     loadCourses(); // Reload the course list
     setFormData1({
       code: '',
@@ -113,14 +115,19 @@ const GESAdmin= () => {
   };
   const handleEditFormSubmit1 = async (updatedCourse) => {
     // Send a PUT request to update the course
-    await axios.put(`http://localhost:8080/user/${updatedCourse.code}`, updatedCourse);
+    await axios.put(`http://localhost:8080/user2/${updatedCourse.code}`, updatedCourse);
     loadCourses(); // Reload the course list
     setSelectedCourse1(null); // Clear the selected course
   };
 
-  const handleDeleteClick = async (code) => {
+  const handleDeleteClick1 = async (code) => {
     // Send a DELETE request to delete the course
     await axios.delete(`http://localhost:8080/user/${code}`);
+    loadCourses(); // Reload the course list
+  };
+  const handleDeleteClick2 = async (code) => {
+    // Send a DELETE request to delete the course
+    await axios.delete(`http://localhost:8080/user2/${code}`);
     loadCourses(); // Reload the course list
   };
 
@@ -184,7 +191,7 @@ const GESAdmin= () => {
                   <td>{course.coordinator}</td>
                   <td>{course.lecturer}</td>
                   <td><button onClick={() => handleEditClick1(course)} style={{backgroundColor: 'green' }}>Edit</button></td>
-                  <td><button onClick={() => handleDeleteClick(course.code)}style={{backgroundColor: 'red' }}>Delete</button></td>
+                  <td><button onClick={() => handleDeleteClick2(course.code)}style={{backgroundColor: 'red' }}>Delete</button></td>
                 </tr>
               ))
             }
@@ -204,7 +211,7 @@ const GESAdmin= () => {
               {showAddForm1 && (
                 <div className="add-course-popup">
                   <h3>Add New Course (Arts and Humanities & Political and Social Sciences)</h3>
-                  <form onSubmit={handleAddCourse2}>
+                  <form onSubmit={handleAddCourse1}>
                     {/* Input fields */}
                     <div className="form-row">
                       <div className="form-col">
@@ -312,7 +319,7 @@ const GESAdmin= () => {
                         <input
                           type="text"
                           id="lecturer"
-                          value={formData2.lecturer}
+                          value={formData1.lecturer}
                           onChange={(e) =>
                             setFormData1({ ...formData1, lecturer: e.target.value })
                           }
@@ -499,7 +506,7 @@ const GESAdmin= () => {
                   <td>{Course2.coordinator}</td>
                   <td>{Course2.lecturer}</td>
                   <td><button onClick={() => handleEditClick2(Course2)} style={{backgroundColor: 'green' }}>Edit</button></td>
-                  <td><button onClick={() => handleDeleteClick(Course2.code)}style={{backgroundColor: 'red' }}>Delete</button></td>
+                  <td><button onClick={() => handleDeleteClick1(Course2.code)}style={{backgroundColor: 'red' }}>Delete</button></td>
                   
                 </tr>
               ))
