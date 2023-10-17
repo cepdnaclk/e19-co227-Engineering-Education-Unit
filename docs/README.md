@@ -16,7 +16,8 @@ title: Engineering Education Unit
 <!-- 
 This is a sample image, to show how to add images to your page. To learn more options, please refer [this](https://projects.ce.pdn.ac.lk/docs/faq/how-to-add-an-image/)-->
 
-![Front side of Faculty of Engineering University of Peradeniya](./images/uop.jpg)
+
+![Front page of the user](./images/Home_User_1.jpg)
  
 
 
@@ -83,16 +84,16 @@ This is a sample image, to show how to add images to your page. To learn more op
 
 ## Functions of application
 
-#### **i. User ( Lecturers / Students)**
+#### **1. User ( Lecturers / Students)**
 - Can book a seminar room or a lecture hall as wanted
 - Designed to get the ideas about the general courses offered to the undergraduates in various times
 - check the details of the past and the present staff of EEU.
 - Designed to get the details of the TEAL 2.0 seminar series and videos of the some subjects and some events.
 
-#### **ii. Admin**
+#### **2. Admin**
 - Update the pages when there is a need 
 - Can book a lecture hall or a seminar room if its necessary even if it is already booked 
-- Can upload the videos of some subjects and the events held in the university
+
 
 ## Data Flow
 ![Data Flow](./images/Data_flow.png)
@@ -106,6 +107,21 @@ This is a sample image, to show how to add images to your page. To learn more op
 - #### Security - Spring Security, JWT
 - #### Testing - Postman
 - #### Storage - MySQL
+
+## User interface for Normal Users without Logging in
+- Home page
+- Staff details
+1. Present Staff
+2. Past Staff
+- General Elective Subjects
+- TEAL 2.0 Support and Development Center
+1. First Page
+2. Second Page
+![FullPages](./images/images/Home4.png)
+- Facilities
+![Facilities](./images/images/Facilities.png)
+
+
 
 
 
