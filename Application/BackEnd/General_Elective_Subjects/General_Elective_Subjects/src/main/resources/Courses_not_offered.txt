@@ -1,0 +1,131 @@
+package com.GES.General_Elective_Subjects.Controller;
+
+import com.GES.General_Elective_Subjects.Model.GES;
+import com.GES.General_Elective_Subjects.Repository.GESRepository;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.ResourceLoader;
+import org.springframework.util.ResourceUtils;
+import org.springframework.web.bind.annotation.*;
+
+import java.io.*;
+import java.nio.file.Files;
+import java.nio.file.StandardCopyOption;
+import java.util.List;
+import java.util.Map;
+
+@RestController
+@CrossOrigin("http://localhost:3000")
+
+public class GESController {
+
+    @Autowired
+    private GESRepository gesRepository;
+    // New one
+    @Autowired
+    private ResourceLoader resourceLoader;
+
+    @PostMapping("/user")
+    GES newGes(@RequestBody GES newGes){
+        return gesRepository.save(newGes);
+    }
+
+    @GetMapping("/getcourses")
+    List<GES> getAllCourses(){
+        return gesRepository.findAll();
+    }
+
+    /*@RequestMapping("/courses")
+    public String Courses_not_offered() throws FileNotFoundException, IOException {
+        return OP();
+    }
+    public static String OP() throws FileNotFoundException, IOException{
+        File file = ResourceUtils.getFile("classpath:coursesnotoffered.txt");
+        String content = new String(Files.readAllBytes(file.toPath()));
+        System.out.println(content);
+
+        return content;
+    }
+
+    @PutMapping("/update")
+    public void updateData(@RequestBody Map<String, String> request) throws IOException {
+        String updatedData = request.get("updatedData");
+        File file = ResourceUtils.getFile("classpath:coursesnotoffered.txt");
+        Files.write(file.toPath(), updatedData.getBytes());
+    }
+
+    @DeleteMapping("/delete")
+    public void deleteData() throws IOException {
+        File file = ResourceUtils.getFile("classpath:coursesnotoffered.txt");
+        Files.write(file.toPath(), new byte[0]);
+    }*/
+    @RequestMapping("/courses")
+    public String Courses_not_offered() throws IOException {
+        Resource resource = resourceLoader.getResource("classpath:coursesnotoffered.txt");
+        InputStream inputStream = resource.getInputStream();
+        String content = new String(inputStream.readAllBytes());
+        inputStream.close();
+        return content;
+    }
+
+    /*@PutMapping("/update")
+    public void updateData(@RequestBody Map<String, String> request) throws IOException {
+        String updatedData = request.get("updatedData");
+        Resource resource = resourceLoader.getResource("classpath:coursesnotoffered.txt");
+        OutputStream outputStream = Files.newOutputStream(resource.getFile().toPath());
+        outputStream.write(updatedData.getBytes());
+        outputStream.close();
+    }
+
+    @DeleteMapping("/delete")
+    public void deleteData() throws IOException {
+        Resource resource = resourceLoader.getResource("classpath:coursesnotoffered.txt");
+
+        // Delete the contents of the file by writing an empty byte array
+        OutputStream outputStream = Files.newOutputStream(resource.getFile().toPath());
+        outputStream.write(new byte[0]);
+        outputStream.close();
+    }*/
+    @PutMapping("/update")
+    public void updateData(@RequestBody Map<String, String> request) throws IOException {
+        String updatedData = request.get("updatedData");
+        Resource resource = resourceLoader.getResource("classpath:coursesnotoffered.txt");
+        File tempFile = File.createTempFile("coursesnotoffered", ".txt");
+        try (OutputStream outputStream = new FileOutputStream(tempFile)) {
+            outputStream.write(updatedData.getBytes());
+        }
+        Files.copy(tempFile.toPath(), resource.getFile().toPath(), StandardCopyOption.REPLACE_EXISTING);
+        tempFile.delete(); // Delete the temporary file
+    }
+
+    @DeleteMapping("/delete")
+    public void deleteData() throws IOException {
+        Resource resource = resourceLoader.getResource("classpath:coursesnotoffered.txt");
+        File tempFile = File.createTempFile("coursesnotoffered", ".txt");
+        Files.copy(tempFile.toPath(), resource.getFile().toPath(), StandardCopyOption.REPLACE_EXISTING);
+        tempFile.delete(); // Delete the temporary file
+    }
+    /*@PutMapping("/update")
+    public void updateData(@RequestBody Map<String, String> request) throws IOException {
+        String updatedData = request.get("updatedData");
+        Resource resource = resourceLoader.getResource("classpath:coursesnotoffered.txt");
+        File file = resource.getFile();
+        try (OutputStream outputStream = new FileOutputStream(file)) {
+            outputStream.write(updatedData.getBytes());
+        }
+        log.info("File updated successfully.");
+    }
+
+    @DeleteMapping("/delete")
+    public void deleteData() throws IOException {
+        Resource resource = resourceLoader.getResource("classpath:coursesnotoffered.txt");
+        File file = resource.getFile();
+        try (OutputStream outputStream = new FileOutputStream(file)) {
+            outputStream.write(new byte[0]);
+        }
+        log.info("File deleted successfully.");
+    }*/
+
+
+
+}

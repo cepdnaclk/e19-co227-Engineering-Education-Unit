@@ -1,0 +1,4 @@
+.PastStaff-form-container{
+    overflow-y: scroll; /* Enable the vertical scrollbar */
+    padding: 20px;
+  }

@@ -1,0 +1,71 @@
+[
+    {
+        "title": "Home",
+        "path": "/"
+    },
+    {
+        "title": "Contact",
+        "path": "/Contact"
+    }, 
+    {
+        "title": "Booking System",
+        "path": "https://eeu.skedda.com/booking"
+
+    },
+    {
+        "title": "TEAL 2.0 Seminar Series Page1",
+        "path": "/Teal1"
+    },
+    {
+        "title": "TEAL 2.0 Seminar Series Page2",
+        "path": "/Teal2"
+    },
+    {
+        "title": "Seminar Room 1",
+        "path": "/Seminarroom1"
+    },
+    {
+        "title": "Seminar Room 2",
+        "path": "/Seminarroom2"
+    },
+    {
+        "title": "Seminar Room 3",
+        "path": "/Seminarroom3"
+    },
+    {
+        "title": "A/V Studio",
+        "path": "/AVRecordingRoom"
+    },
+    {
+        "title": "EOE Perera Theater",
+        "path": "/"
+    },
+    {
+        "title": "Conference Room",
+        "path": "/ConferenceRoom"
+    },
+    {
+        "title": "Lecture Rooms",
+        "path": "/LectureRooms"
+    },
+    {
+        "title": "Public Addressing System",
+        "path": "/PublicAddressingSystem"
+    },
+    {
+        "title": "Recent Developments",
+        "path": "/Development"
+    },
+    {
+        "title": "Contact Us",
+        "path": "/ContactUs"
+    },
+    {
+        "title": "General Elective Subjects",
+        "path": "/GES"
+    },
+    {
+        
+    }
+
+]

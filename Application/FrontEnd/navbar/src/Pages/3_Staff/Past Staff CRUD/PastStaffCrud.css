@@ -1,0 +1,50 @@
+.past-staff-crud-container{
+    overflow-y: scroll; /* Enable the vertical scrollbar */
+
+}
+/* CSS styles for the table */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    background-color: #fff; /* Set the background color of the table */
+  }
+  
+  /* CSS styles for the table header */
+  .table thead th {
+    background-color:royalblue; /* Background color for table header */
+    color: #fff; /* Text color for table header */
+    padding: 10px;
+    text-align: left;
+  }
+  
+  /* CSS styles for the table rows */
+  .table tbody tr:nth-child(even) {
+    background-color: #f8f8f8; /* Alternate row background color */
+  }
+  
+  /* CSS styles for table cells (data) */
+  .table tbody td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+  }
+  
+  /* CSS styles for the Action links */
+  .table tbody td a {
+    text-decoration: none; /* Remove underlines from links */
+    margin-right: 10px; /* Add spacing between links */
+    color: #0077cc; /* Link text color */
+  }
+  .blue-link {
+    color:white; /* Set the text color to blue */
+    border: 1px solid blue; /* Add a 1px solid blue border */
+    padding: 5px 10px; /* Add padding to make it visually appealing */
+    text-decoration: none; /* Remove the default underline for links */
+    border-radius: 5px;
+    background-color: royalblue !important;
+    margin-right: 20px;
+  } 
+
+

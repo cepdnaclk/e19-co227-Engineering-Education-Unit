@@ -1,0 +1,85 @@
+
+/*.Appbar {
+   position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1; 
+  }
+  
+  .Navbarmenu {
+    position: fixed;
+    top: 90px; 
+    left: 0;
+    right: 0;
+    z-index: 1; 
+  }*/
+  .page{
+    padding-top: 100px;
+  }
+  
+  /*main {
+    padding-top: 160px;
+  }*/
+  
+@media (max-width: 576px) {
+  .Appbar,
+  .Navbarmenu {
+    
+    padding: 0; 
+  }
+
+  main {
+    padding-top: 140px;
+  }
+}
+/* Add this CSS to your App.css or a separate stylesheet */
+
+/* Initial styles for the Appbar and Navbarmenu */
+/*.Appbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: top 0.3s;
+  background-color: #333; 
+  color: #fff; 
+}
+
+.Navbarmenu {
+  position: fixed;
+  top: 90px;
+  left: 0;
+  right: 0;
+  z-index: 1;
+  transition: top 0.3s;
+  background-color: #333; 
+  color: #fff; 
+}
+
+
+.Appbar.visible,
+.Navbarmenu.visible {
+  top: -100px; 
+}
+
+
+main {
+  padding-top: 0;
+}
+
+
+@media (max-width: 576px) {
+  .Appbar,
+  .Navbarmenu {
+    padding: 0; 
+  }
+
+  main {
+    padding-top: 140px; 
+  }
+}*/
+
+
+

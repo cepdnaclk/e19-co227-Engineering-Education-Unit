@@ -1,0 +1,51 @@
+/* PastStaffEdit.css */
+
+.pastStaff-form-container {
+    overflow-y: scroll; /* Enable the vertical scrollbar */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0; /* Adds vertical margin */
+  }
+  
+  .pastStaff-form-inner-container {
+    border: 1px solid #ccc;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 90%;
+    margin-left: 5%;
+    background-color: #fff; /* Background color for the form container */
+  }
+  
+  .headings h3 {
+    text-align: center;
+    font-family: sans-serif;
+  }
+  
+  .Edit-form {
+    width: 100%;
+  }
+  
+  .form-label {
+    font-weight: bold;
+  }
+  
+  .form-control {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0; /* Adds vertical spacing between input fields */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .custom-button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+  }
+  
+  .custom-button:hover {
+    background-color:#0056b3;
+}

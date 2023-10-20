@@ -1,0 +1,97 @@
+/*.AppBar {
+    width: 100%;
+    height: 50px;
+    background-color:#07a8ff;
+    display: flex;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    align-items: center;
+}
+.logo{
+    text-align: center;
+}
+.title{
+    border-left: 1px solid;
+}
+
+@media (max-width: 576px) {
+    .mobile-hide {
+        display: none;
+    }
+
+    .responsive-logo {
+        width: 100%; 
+        max-width: 300%; 
+        height: auto;
+      }
+}
+*/
+.AppBar {
+    width: 100%;
+   /* background-color: #07a8ff;*/
+   background-color: #4485a1;
+    display: flex;
+    align-items: center;
+    padding: 1rem; /* Add some padding for spacing */
+    z-index: 2; /* Set a higher z-index value */
+  }
+  
+  .row {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 0; /* Remove default Bootstrap padding */
+  }
+  
+  .logo {
+    flex: 1;
+    max-width: 20%; /* Set max-width to 20% of the screen */
+    height: 100%; /* Set the height to 100% */
+    padding-left: 100px;
+  }
+  
+  .title {
+    border-left: 1px solid;
+    padding-left: 4rem; /* Add padding for spacing */
+    flex: 3; /* Set flex to 3 to occupy 80% of the screen */
+    font-size: 400px;
+    margin-left: -110px;
+    line-height: 1.5;
+  }
+  
+  /* Responsive Font Size */
+  h2 {
+    font-size: 1.5rem; /* Adjust the font size as needed */
+  }
+  
+  h5 {
+    font-size: 1rem; /* Adjust the font size as needed */
+  }
+  
+  @media (max-width: 576px) {
+    .mobile-hide {
+      display: none;
+    }
+  
+    .logo {
+      max-width: 100%; /* Full width on smaller screens */
+    }
+  
+    .title {
+      flex: 0; /* Take full width on smaller screens */
+      padding: 1rem; /* Add some spacing to separate it from AppBar */
+      font-size: 100px;
+    }
+  
+    h2 {
+      font-size: 0.8rem; /* Adjust font size for smaller screens */
+    }
+  
+    h5 {
+      font-size: 0.8rem; /* Adjust font size for smaller screens */
+    }
+  }
+  

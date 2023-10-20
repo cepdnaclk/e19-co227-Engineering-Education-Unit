@@ -1,0 +1,105 @@
+.pastStaff-container{
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-right: 20px;
+  text-align: center;
+  overflow-y: scroll; /* Enable the vertical scrollbar */
+}
+
+.headings{
+  border-bottom: solid rgb(29, 137, 173);
+  box-shadow: 5px 5px 10px rgba(151, 205, 238, 0.4);
+  font-family: sans-serif;
+}
+.headings-head{
+  border: solid rgb(29, 137, 173);
+  border-bottom: solid rgb(29, 137, 173);
+  box-shadow: 5px 5px 10px rgba(151, 205, 238, 0.4);
+  font-family: sans-serif;
+  background-color: rgb(29, 137, 173);
+  color: white;
+
+}
+/*Directors*/
+.director-list-container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  justify-content: center;
+  margin-bottom: 40px;
+  border: none;
+}
+
+.director-card{
+    width: 250px !important;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+    align-self: auto;
+  }
+  
+  .director-card img {
+    max-width: 100%;
+    height: 200px;
+    border-radius: 4px;
+  }
+  
+  .director-card h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+  
+  .director-card p {
+    margin: 8px 0;
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Hover effect */
+  .director-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
+
+ 
+  /*Other staffs*/ 
+  
+  .staff-list-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    border: none;
+  }
+
+  .staff-card{
+    width: 250px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    background-color: #fff;
+    align-self: auto;
+  }
+
+  .staff-card img {
+    max-width: 100%;
+    height: 200px;
+    border-radius: 4px;
+  }
+
+  .staff-card h2 {
+    font-size: 1.5rem;
+    margin: 10px 0;
+  }
+
+    /* Hover effect */
+  .staff-card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+  }
